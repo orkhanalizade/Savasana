@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6FBB95362375785D00A42DB4 /* Savasana.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FBB95342375785D00A42DB4 /* Savasana.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FBB953E23757B7700A42DB4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB953D23757B7700A42DB4 /* UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6FBB95312375785D00A42DB4 /* Savasana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Savasana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBB95342375785D00A42DB4 /* Savasana.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Savasana.h; sourceTree = "<group>"; };
 		6FBB95352375785D00A42DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FBB953D23757B7700A42DB4 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		6FBB95332375785D00A42DB4 /* Savasana */ = {
 			isa = PBXGroup;
 			children = (
+				6FBB953C23757B1C00A42DB4 /* UI Extensions */,
 				6FBB95342375785D00A42DB4 /* Savasana.h */,
 				6FBB95352375785D00A42DB4 /* Info.plist */,
 			);
 			path = Savasana;
+			sourceTree = "<group>";
+		};
+		6FBB953C23757B1C00A42DB4 /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6FBB953D23757B7700A42DB4 /* UILabel.swift */,
+			);
+			path = "UI Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					6FBB95302375785D00A42DB4 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBB953E23757B7700A42DB4 /* UILabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		6FBB953A2375785D00A42DB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QM87MF63VL;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.asanarebel.Savasana;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		6FBB953B2375785D00A42DB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QM87MF63VL;
