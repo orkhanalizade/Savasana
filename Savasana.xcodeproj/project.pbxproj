@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6FBB95362375785D00A42DB4 /* Savasana.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FBB95342375785D00A42DB4 /* Savasana.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FBB953E23757B7700A42DB4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB953D23757B7700A42DB4 /* UILabel.swift */; };
+		6FBB95402375853F00A42DB4 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB953F2375853F00A42DB4 /* UIButton.swift */; };
+		6FBB95422375893100A42DB4 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB95412375893100A42DB4 /* UIFont.swift */; };
+		6FBB954423758DE500A42DB4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB954323758DE500A42DB4 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +19,9 @@
 		6FBB95342375785D00A42DB4 /* Savasana.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Savasana.h; sourceTree = "<group>"; };
 		6FBB95352375785D00A42DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FBB953D23757B7700A42DB4 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		6FBB953F2375853F00A42DB4 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		6FBB95412375893100A42DB4 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		6FBB954323758DE500A42DB4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				6FBB953D23757B7700A42DB4 /* UILabel.swift */,
+				6FBB953F2375853F00A42DB4 /* UIButton.swift */,
+				6FBB95412375893100A42DB4 /* UIFont.swift */,
+				6FBB954323758DE500A42DB4 /* UIView.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
@@ -143,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBB954423758DE500A42DB4 /* UIView.swift in Sources */,
 				6FBB953E23757B7700A42DB4 /* UILabel.swift in Sources */,
+				6FBB95402375853F00A42DB4 /* UIButton.swift in Sources */,
+				6FBB95422375893100A42DB4 /* UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
