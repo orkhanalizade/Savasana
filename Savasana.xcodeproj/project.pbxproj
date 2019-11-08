@@ -12,6 +12,7 @@
 		6FBB95402375853F00A42DB4 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB953F2375853F00A42DB4 /* UIButton.swift */; };
 		6FBB95422375893100A42DB4 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB95412375893100A42DB4 /* UIFont.swift */; };
 		6FBB954423758DE500A42DB4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB954323758DE500A42DB4 /* UIView.swift */; };
+		6FBB95462375952300A42DB4 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB95452375952300A42DB4 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6FBB953F2375853F00A42DB4 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		6FBB95412375893100A42DB4 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		6FBB954323758DE500A42DB4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6FBB95452375952300A42DB4 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				6FBB953F2375853F00A42DB4 /* UIButton.swift */,
 				6FBB95412375893100A42DB4 /* UIFont.swift */,
 				6FBB954323758DE500A42DB4 /* UIView.swift */,
+				6FBB95452375952300A42DB4 /* UIColor.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				6FBB953E23757B7700A42DB4 /* UILabel.swift in Sources */,
 				6FBB95402375853F00A42DB4 /* UIButton.swift in Sources */,
 				6FBB95422375893100A42DB4 /* UIFont.swift in Sources */,
+				6FBB95462375952300A42DB4 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

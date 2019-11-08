@@ -20,7 +20,7 @@ extension UILabel {
         - fontSize: The UILabel font size.
         - font: The UILabel font. If the font size was set previously the new font's size will be overwritten. By default the font set to the system default font and the font size is set to 14.0.
      */
-    convenience public init(text: String? = nil, textColor: UIColor = .black, numberOfLines: Int = 1, textAlignment: NSTextAlignment = .left, fontSize: CGFloat = 14.0, font: UIFont? = UIFont.systemFont(ofSize: 14.0)) {
+    convenience internal init(text: String? = nil, textColor: UIColor = .black, numberOfLines: Int = 1, textAlignment: NSTextAlignment = .left, fontSize: CGFloat = 14.0, font: UIFont? = UIFont.systemFont(ofSize: 14.0)) {
         self.init()
 
         self.text = text

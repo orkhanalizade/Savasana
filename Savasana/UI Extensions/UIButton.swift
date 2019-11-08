@@ -49,6 +49,6 @@ extension UIButton {
      Set UIButton background color to the Asana Rebel default green tint.
      */
     internal func setDefaultGreenColor() {
-        self.backgroundColor = #colorLiteral(red: 0.1708312333, green: 0.7390241027, blue: 0.4758158922, alpha: 1)
+        self.backgroundColor = UIColor.aRGreenDark
     }
 }
