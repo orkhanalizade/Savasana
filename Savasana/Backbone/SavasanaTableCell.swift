@@ -8,19 +8,39 @@
 
 import UIKit
 
-class SavasanaTableCell<T>: UITableViewCell {
-    open var item: T!
-    open weak var parentViewController: UIViewController?
+public protocol ConfigurableCell: UITableViewCell {
+    associatedtype DataType
 
-    override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    func configure(data: DataType)
+}
 
-        setupUI()
+public protocol CellConfigurator {
+    static var reusableID: String { get }
+
+    func configure(cell: UIView)
+}
+
+//open class SavasanaTableCell: UITableViewCell, ConfigurableCell {
+//
+//    open func setupUI() {}
+//}
+
+open class SavasanaItem<CellType: ConfigurableCell, DataType>: CellConfigurator where CellType.DataType == DataType {
+
+    public static var reusableID: String {
+        return String(describing: CellType.self)
     }
 
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    let item: DataType
+
+    public init(item: DataType) {
+        self.item = item
     }
 
-    open func setupUI() {}
+    public func configure(cell: UIView) {
+        guard let cell = cell as? CellType else { return }
+
+        cell.configure(data: item)
+    }
+
 }
