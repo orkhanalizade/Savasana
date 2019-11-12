@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol ConfigurableCell: UITableViewCell {
+private protocol ConfigurableCell: UITableViewCell {
     associatedtype DataType
 
     func configure(data: DataType)
@@ -20,12 +20,16 @@ public protocol CellConfigurator {
     func configure(cell: UIView)
 }
 
-//open class SavasanaTableCell: UITableViewCell, ConfigurableCell {
-//
-//    open func setupUI() {}
-//}
+open class SavasanaTableCell<DataType>: UITableViewCell, ConfigurableCell {
+    typealias DataType = DataType
 
-open class SavasanaItem<CellType: ConfigurableCell, DataType>: CellConfigurator where CellType.DataType == DataType {
+    open func configure(data: DataType) {
+    }
+
+    open func setupUI() {}
+}
+
+open class SavasanaItem<CellType: SavasanaTableCell<DataType>, DataType>: CellConfigurator {
 
     public static var reusableID: String {
         return String(describing: CellType.self)
